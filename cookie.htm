@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie 站点设置测试页面</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Cookie 站点设置测试页面</h1>
+
+<p id="demo"><font color="red">看到这些内容，说明 JavaScript 被禁用了</style></p>
+
+<script>
+    if (document.cookie.length > 0) {
+        document.getElementById("demo").innerHTML = document.cookie;
+    } else {
+        document.getElementById("demo").innerHTML = '<font color="red">看到这些内容，说明 Cookie 被禁用了</style>';
+    }
+</script>
+
+</body>
+</html>
